@@ -14,6 +14,9 @@ importers:
       drizzle-orm:
         specifier: ^0.40.0
         version: 0.40.0(@cloudflare/workers-types@4.20250303.0)(@types/better-sqlite3@7.6.12)(better-sqlite3@11.8.1)(gel@2.0.1)
+      nprogress:
+        specifier: ^0.2.0
+        version: 0.2.0
     devDependencies:
       '@cloudflare/workers-types':
         specifier: ^4.20250303.0
@@ -1705,6 +1708,9 @@ packages:
     resolution: {integrity: sha512-c5XK0MjkGBrQPGYG24GBADZud0NCbznxNx0ZkS+ebUTrmV1qTDxPxSL8zEAPURXSbLRWVexxmP4986BziahL5w==}
     engines: {node: '>=10'}
 
+  nprogress@0.2.0:
+    resolution: {integrity: sha512-I19aIingLgR1fmhftnbWWO3dXc0hSxqHQHQb3H8m+K3TnEn/iSeTZZOyvKXWqQESMwuUVnatlCnZdLBZZt2VSA==}
+
   ohash@2.0.11:
     resolution: {integrity: sha512-RdR9FQrFwNBNXAr4GixM8YaRZRJ5PUWbKYbE5eOsrwAjJW0q2REGcf79oYPsLyskQCZG1PLN+S/K1V00joZAoQ==}
 
@@ -3186,6 +3192,8 @@ snapshots:
   node-abi@3.74.0:
     dependencies:
       semver: 7.7.1
+
+  nprogress@0.2.0: {}
 
   ohash@2.0.11: {}
 

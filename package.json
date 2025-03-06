@@ -39,7 +39,8 @@
 	},
 	"dependencies": {
 		"better-sqlite3": "^11.8.0",
-		"drizzle-orm": "^0.40.0"
+		"drizzle-orm": "^0.40.0",
+		"nprogress": "^0.2.0"
 	},
 	"pnpm": {
 		"onlyBuiltDependencies": [
