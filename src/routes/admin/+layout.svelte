@@ -63,7 +63,7 @@
 			</Sidebar.Group>
 		</Sidebar.Content>
 	</Sidebar.Root>
-	<main class=" flex-1">
+	<main class="flex-1">
 		<Sidebar.Trigger />
 		{@render children?.()}
 	</main>
