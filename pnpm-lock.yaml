@@ -39,12 +39,18 @@ importers:
       '@types/better-sqlite3':
         specifier: ^7.6.12
         version: 7.6.12
+      bits-ui:
+        specifier: ^1.3.6
+        version: 1.3.6(svelte@5.22.5)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
       drizzle-kit:
         specifier: ^0.30.2
         version: 0.30.5
+      lucide-svelte:
+        specifier: ^0.477.0
+        version: 0.477.0(svelte@5.22.5)
       prettier:
         specifier: ^3.4.2
         version: 3.5.3
@@ -868,6 +874,15 @@ packages:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
 
+  '@floating-ui/core@1.6.9':
+    resolution: {integrity: sha512-uMXCuQ3BItDUbAMhIXw7UPXRfAlOAvZzdK9BWpE60MCn+Svt3aLn9jsPTi/WNGlRUu2uI0v5S7JiIUsbsvh3fw==}
+
+  '@floating-ui/dom@1.6.13':
+    resolution: {integrity: sha512-umqzocjDgNRGTuO7Q8CU32dkHkECqI8ZdMZ5Swb6QAM0t5rnlrN3lGo1hdpscRd3WS8T6DKYK4ephgIH9iRh3w==}
+
+  '@floating-ui/utils@0.2.9':
+    resolution: {integrity: sha512-MDWhGtE+eHw5JW7lq4qhc5yRLS11ERl1c7Z6Xd0a58DozHES6EnNNwUWbMiG4J9Cgj053Bhk8zvlhFYKVhULwg==}
+
   '@img/sharp-darwin-arm64@0.33.5':
     resolution: {integrity: sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
@@ -984,6 +999,9 @@ packages:
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
     cpu: [x64]
     os: [win32]
+
+  '@internationalized/date@3.7.0':
+    resolution: {integrity: sha512-VJ5WS3fcVx0bejE/YHfbDKR/yawZgKqn/if+oEeLqNwBtPzVB06olkfcnojTmEMX+gTpH+FlQ69SHNitJ8/erQ==}
 
   '@jridgewell/gen-mapping@0.3.8':
     resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
@@ -1157,6 +1175,9 @@ packages:
       svelte: ^5.0.0
       vite: ^6.0.0
 
+  '@swc/helpers@0.5.15':
+    resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+
   '@tailwindcss/node@4.0.10':
     resolution: {integrity: sha512-5YuI8pXfNkg5Ng12wgMic6jrFe4K8+eVmaC1kLsbA6g7iMgrj5fyl4hoLqHjmBDGpJXKxUAjwMSuJmc4oetnrg==}
 
@@ -1284,6 +1305,12 @@ packages:
 
   bindings@1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+
+  bits-ui@1.3.6:
+    resolution: {integrity: sha512-0Ee7Ox5KqIBdio/+TG387Xlj6QJ0S7tHVS2K4DYiBHxBRbm6ni13i/pOoNDjeME6NOGUZxbSe4dNZIW3pGlxZA==}
+    engines: {node: '>=18', pnpm: '>=8.7.0'}
+    peerDependencies:
+      svelte: ^5.11.0
 
   bl@4.1.0:
     resolution: {integrity: sha512-1W07cM9gS6DcLperZfFSj+bWLtaPGSOHWhPiGzXmvVJbRLdG82sH/Kn8EtW1VqWVA54AKf2h5k5BbnIbwF3h6w==}
@@ -1578,6 +1605,9 @@ packages:
   ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
+  inline-style-parser@0.2.4:
+    resolution: {integrity: sha512-0aO8FkhNZlj/ZIbNi7Lxxr12obT7cL1moPfE4tg1LkX7LlLfC6DeX4l2ZEud1ukP9jNQyNnfzQVqwbwmAATY4Q==}
+
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
 
@@ -1666,6 +1696,11 @@ packages:
 
   locate-character@3.0.0:
     resolution: {integrity: sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA==}
+
+  lucide-svelte@0.477.0:
+    resolution: {integrity: sha512-w/zj6/CXTtTizIeo8SuWGYu0u45CJ7cD2AtNzIObVHZrWXNgaIIX/2cI25wybjSmYHIi4pub2TLv/kNPKiB3ww==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
 
   magic-string@0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
@@ -1853,6 +1888,11 @@ packages:
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
+  runed@0.23.4:
+    resolution: {integrity: sha512-9q8oUiBYeXIDLWNK5DfCWlkL0EW3oGbk845VdKlPeia28l751VpfesaB/+7pI6rnbx1I6rqoZ2fZxptOJLxILA==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -1918,6 +1958,9 @@ packages:
     resolution: {integrity: sha512-4gB8na07fecVVkOI6Rs4e7T6NOTki5EmL7TUduTs6bu3EdnSycntVJ4re8kgZA+wx9IueI2Y11bfbgwtzuE0KQ==}
     engines: {node: '>=0.10.0'}
 
+  style-to-object@1.0.8:
+    resolution: {integrity: sha512-xT47I/Eo0rwJmaXC4oilDGDWLohVhR6o/xAQcPQN8q6QBuZVL8qMYL85kLmST5cPjAorwvqIA4qXTRQoYHaL6g==}
+
   svelte-check@4.1.4:
     resolution: {integrity: sha512-v0j7yLbT29MezzaQJPEDwksybTE2Ups9rUxEXy92T06TiA0cbqcO8wAOwNUVkFW6B0hsYHA+oAX3BS8b/2oHtw==}
     engines: {node: '>= 18.0.0'}
@@ -1926,9 +1969,18 @@ packages:
       svelte: ^4.0.0 || ^5.0.0-next.0
       typescript: '>=5.0.0'
 
+  svelte-toolbelt@0.7.1:
+    resolution: {integrity: sha512-HcBOcR17Vx9bjaOceUvxkY3nGmbBmCBBbuWLLEWO6jtmWH8f/QoWmbyUfQZrpDINH39en1b8mptfPQT9VKQ1xQ==}
+    engines: {node: '>=18', pnpm: '>=8.7.0'}
+    peerDependencies:
+      svelte: ^5.0.0
+
   svelte@5.22.5:
     resolution: {integrity: sha512-+2BDWVa/rqr34oM+5HFUSmCCPdBBeNqFv2Xc/SSB8kV4iQhWWBNvU9/nd5Dz3PkAGl7Bm/AndS1vY4fe1MgTKA==}
     engines: {node: '>=18'}
+
+  tabbable@6.2.0:
+    resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
 
   tailwind-merge@2.5.4:
     resolution: {integrity: sha512-0q8cfZHMu9nuYP/b5Shb7Y7Sh1B7Nnl5GqNr1U+n2p6+mybvRtayrQ+0042Z5byvTA8ihjlP8Odo8/VnHbZu4Q==}
@@ -2511,6 +2563,17 @@ snapshots:
 
   '@fastify/busboy@2.1.1': {}
 
+  '@floating-ui/core@1.6.9':
+    dependencies:
+      '@floating-ui/utils': 0.2.9
+
+  '@floating-ui/dom@1.6.13':
+    dependencies:
+      '@floating-ui/core': 1.6.9
+      '@floating-ui/utils': 0.2.9
+
+  '@floating-ui/utils@0.2.9': {}
+
   '@img/sharp-darwin-arm64@0.33.5':
     optionalDependencies:
       '@img/sharp-libvips-darwin-arm64': 1.0.4
@@ -2585,6 +2648,10 @@ snapshots:
 
   '@img/sharp-win32-x64@0.33.5':
     optional: true
+
+  '@internationalized/date@3.7.0':
+    dependencies:
+      '@swc/helpers': 0.5.15
 
   '@jridgewell/gen-mapping@0.3.8':
     dependencies:
@@ -2725,6 +2792,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@swc/helpers@0.5.15':
+    dependencies:
+      tslib: 2.8.1
+
   '@tailwindcss/node@4.0.10':
     dependencies:
       enhanced-resolve: 5.18.1
@@ -2822,6 +2893,17 @@ snapshots:
   bindings@1.5.0:
     dependencies:
       file-uri-to-path: 1.0.0
+
+  bits-ui@1.3.6(svelte@5.22.5):
+    dependencies:
+      '@floating-ui/core': 1.6.9
+      '@floating-ui/dom': 1.6.13
+      '@internationalized/date': 3.7.0
+      esm-env: 1.2.2
+      runed: 0.23.4(svelte@5.22.5)
+      svelte: 5.22.5
+      svelte-toolbelt: 0.7.1(svelte@5.22.5)
+      tabbable: 6.2.0
 
   bl@4.1.0:
     dependencies:
@@ -3118,6 +3200,8 @@ snapshots:
 
   ini@1.3.8: {}
 
+  inline-style-parser@0.2.4: {}
+
   is-arrayish@0.3.2:
     optional: true
 
@@ -3177,6 +3261,10 @@ snapshots:
       lightningcss-win32-x64-msvc: 1.29.1
 
   locate-character@3.0.0: {}
+
+  lucide-svelte@0.477.0(svelte@5.22.5):
+    dependencies:
+      svelte: 5.22.5
 
   magic-string@0.25.9:
     dependencies:
@@ -3340,6 +3428,11 @@ snapshots:
       '@rollup/rollup-win32-x64-msvc': 4.34.9
       fsevents: 2.3.3
 
+  runed@0.23.4(svelte@5.22.5):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.22.5
+
   sade@1.8.1:
     dependencies:
       mri: 1.2.0
@@ -3422,6 +3515,10 @@ snapshots:
 
   strip-json-comments@2.0.1: {}
 
+  style-to-object@1.0.8:
+    dependencies:
+      inline-style-parser: 0.2.4
+
   svelte-check@4.1.4(svelte@5.22.5)(typescript@5.8.2):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.25
@@ -3433,6 +3530,13 @@ snapshots:
       typescript: 5.8.2
     transitivePeerDependencies:
       - picomatch
+
+  svelte-toolbelt@0.7.1(svelte@5.22.5):
+    dependencies:
+      clsx: 2.1.1
+      runed: 0.23.4(svelte@5.22.5)
+      style-to-object: 1.0.8
+      svelte: 5.22.5
 
   svelte@5.22.5:
     dependencies:
@@ -3450,6 +3554,8 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.17
       zimmerframe: 1.1.2
+
+  tabbable@6.2.0: {}
 
   tailwind-merge@2.5.4: {}
 
@@ -3485,8 +3591,7 @@ snapshots:
 
   totalist@3.0.1: {}
 
-  tslib@2.8.1:
-    optional: true
+  tslib@2.8.1: {}
 
   tunnel-agent@0.6.0:
     dependencies:
